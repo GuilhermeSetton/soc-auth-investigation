@@ -1,0 +1,18 @@
+services:
+  db:
+    image: postgres:17@sha256:3b0cda93be7c8dba2ed484d19393d93845dc3dafb88973e248ba8e6d99d784e1
+    environment:
+      POSTGRES_DB: soc_auth
+      POSTGRES_USER: soc_auth
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Run scripts/setup-db.ps1 first}
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - soc_auth_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U soc_auth -d soc_auth"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+volumes:
+  soc_auth_data:

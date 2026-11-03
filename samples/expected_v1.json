@@ -1,0 +1,39 @@
+{
+  "lab_auth_v1.log": {
+    "total_lines": 35,
+    "imported_events": 35,
+    "duplicate_events": 0,
+    "invalid_lines": [],
+    "successful_events": 8,
+    "failed_events": 27,
+    "alerts": [
+      {"rule_id": "repeated_failures", "source": "198.51.100.7", "timestamp": "2026-10-01T12:12:00Z", "event_count": 5},
+      {"rule_id": "repeated_failures", "source": "198.51.100.7", "timestamp": "2026-10-01T12:12:30Z", "event_count": 6},
+      {"rule_id": "repeated_failures", "source": "203.0.113.50", "timestamp": "2026-10-01T12:21:20Z", "event_count": 5},
+      {"rule_id": "multiple_users", "source": "203.0.113.50", "timestamp": "2026-10-01T12:21:20Z", "event_count": 5},
+      {"rule_id": "success_after_failures", "source": "192.0.2.88", "timestamp": "2026-10-01T12:33:00Z", "event_count": 4},
+      {"rule_id": "success_after_failures", "source": "192.0.2.89", "timestamp": "2026-10-01T12:40:00Z", "event_count": 4}
+    ],
+    "alert_totals": {"repeated_failures": 3, "multiple_users": 1, "success_after_failures": 2, "total": 6}
+  },
+  "invalid_lines_v1.log": {
+    "total_lines": 13,
+    "imported_events": 2,
+    "duplicate_events": 0,
+    "invalid_lines": [
+      {"line_number": 1, "reason": "timestamp_without_offset"},
+      {"line_number": 2, "reason": "invalid_format"},
+      {"line_number": 3, "reason": "empty_line"},
+      {"line_number": 4, "reason": "invalid_format"},
+      {"line_number": 5, "reason": "unsupported_message"},
+      {"line_number": 6, "reason": "invalid_ip"},
+      {"line_number": 7, "reason": "invalid_port"},
+      {"line_number": 8, "reason": "invalid_timestamp"},
+      {"line_number": 9, "reason": "invalid_timestamp"},
+      {"line_number": 10, "reason": "unsupported_message"},
+      {"line_number": 12, "reason": "invalid_port"}
+    ],
+    "alerts": [],
+    "alert_totals": {"repeated_failures": 0, "multiple_users": 0, "success_after_failures": 0, "total": 0}
+  }
+}
