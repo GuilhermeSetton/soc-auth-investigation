@@ -87,4 +87,4 @@ A revisão de publicação confirmou reimportação sem duplicação, quatro evi
 - SHA-256 da linha original evita duplicação; mesma linha idêntica de arquivos diferentes vira única evidência. Primeira referência é preservada.
 - Regras usam janela de 300 s; parâmetros e limites inclusivos/exclusivos estão no contrato. Recomputação integral aumenta custo com total armazenado; nenhum truncamento silencioso.
 - Capacidade global: 50.000 eventos únicos e 1.000 registros de importação. Ao exceder, a API recusa toda a importação com 409, sem remover dados. Duplicatas não consomem eventos novos; cada reimportação consome um registro de importação.
-- Sem publicação pública. Revisão e autorização de publicação são etapas separadas.
+- Código público para estudo e portfólio. É um laboratório local: não foi feito para produção nem para ficar exposto na internet.
