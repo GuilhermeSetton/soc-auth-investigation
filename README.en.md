@@ -87,3 +87,7 @@ See [architecture](docs/architecture.md), [API/data contract](docs/CONTRACT.md),
 No authentication: loopback only. Inputs are untrusted and never executed. Original-line SHA-256 deduplicates identical evidence across files, preserving its first reference. Three rules use documented 300-second windows. Full recomputation grows with total stored events; no evidence is silently truncated. The code is public for study and portfolio use; it is a local lab, not meant for production or internet exposure.
 
 Global capacity: 50,000 unique events and 1,000 import records. Exceeding either rejects the whole import with 409, without deleting data. Duplicates consume no new event slots; every reimport consumes an import record.
+
+## License
+
+[MIT](LICENSE) © 2026 Guilherme Setton de Carvalho Bittencourt.

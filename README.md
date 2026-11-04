@@ -88,3 +88,7 @@ A revisão de publicação confirmou reimportação sem duplicação, quatro evi
 - Regras usam janela de 300 s; parâmetros e limites inclusivos/exclusivos estão no contrato. Recomputação integral aumenta custo com total armazenado; nenhum truncamento silencioso.
 - Capacidade global: 50.000 eventos únicos e 1.000 registros de importação. Ao exceder, a API recusa toda a importação com 409, sem remover dados. Duplicatas não consomem eventos novos; cada reimportação consome um registro de importação.
 - Código público para estudo e portfólio. É um laboratório local: não foi feito para produção nem para ficar exposto na internet.
+
+## Licença
+
+[MIT](LICENSE) © 2026 Guilherme Setton de Carvalho Bittencourt.
